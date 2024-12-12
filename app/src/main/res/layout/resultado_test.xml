@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#309CA2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#EA9037"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/botonAtras"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:src="@drawable/flechita"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:cornerRadius="100dp"
+                    app:layout_gravity="start|top" />
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="100"
+                    android:fontFamily="sans-serif-black"
+                    android:text="BIENVENIDO!"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/botonAjustes"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:src="@drawable/engranajito"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:cornerRadius="100dp"
+                    app:layout_gravity="top" />
+
+            </LinearLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="60sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="40sp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2sp"
+                android:background="#EA9730"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="80sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="80sp"
+                    app:srcCompat="@drawable/narrador" />
+
+                <TextView
+                    android:id="@+id/textoGanar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/siguienteButton"
+                    android:layout_width="272sp"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="30sp"
+                    android:backgroundTint="#309CA2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/siguiente_button"
+                    android:textSize="25sp"
+                    app:cornerRadius="30dp"
+                    app:strokeColor="#FFFFFF"
+                    app:strokeWidth="2dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#309CA2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/botonAtras"
+            android:layout_width="108dp"
+            android:layout_height="70sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="sans-serif-black"
+            android:gravity="left"
+            android:src="@drawable/flechita"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_gravity="left" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            app:columnCount="3"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="50dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:srcCompat="@drawable/volumito" />
+
+            <Button
+                android:id="@+id/btnRestaurar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azul"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="ON"
+                android:textSize="24sp"
+                app:cornerRadius="30dp"
+                app:elevation="12dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/btnSilenciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azul"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="OFF"
+                android:textSize="24sp"
+                app:cornerRadius="30dp"
+                app:elevation="12dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="2dp" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="50dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:srcCompat="@drawable/musikeydelrey" />
+
+            <Button
+                android:id="@+id/btnMusica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azul"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="ON"
+                android:textSize="24sp"
+                app:cornerRadius="30dp"
+                app:elevation="12dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/btnNoMusica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azul"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="OFF"
+                android:textSize="24sp"
+                app:cornerRadius="30dp"
+                app:elevation="12dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="2dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="50dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:srcCompat="@drawable/tierrita" />
+
+            <ImageView
+                android:id="@+id/spanish"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:srcCompat="@drawable/spainita" />
+
+            <ImageView
+                android:id="@+id/english"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:srcCompat="@drawable/britanita" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#EA9037"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/perfilboton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EA9037"
+                    android:clickable="true"
+                    android:src="@drawable/perfilito" />
+
+                <ImageView
+                    android:id="@+id/homeboton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EA9037"
+                    android:clickable="true"
+                    android:src="@drawable/casita" />
+
+                <ImageView
+                    android:id="@+id/ajustesboton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EA9037"
+                    android:clickable="true"
+                    android:src="@drawable/engranajito" />
+            </LinearLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

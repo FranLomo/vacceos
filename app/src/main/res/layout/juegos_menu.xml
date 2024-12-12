@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/botonAtras"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:src="@drawable/flechita"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:cornerRadius="100dp"
+            app:layout_gravity="start|top" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="1"
+            app:columnCount="1"
+            app:rowCount="2">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:columnCount="2"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                app:rowCount="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="16dp"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center"
+                    app:layout_rowWeight="1">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#EA9037"
+                            android:clickable="false">
+
+                            <ImageView
+                                android:id="@+id/buttonImageD"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_alignParentLeft="false"
+                                android:layout_alignParentEnd="false"
+                                android:layout_alignParentRight="false"
+                                android:layout_alignParentBottom="false"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/portadadress" />
+
+                            <TextView
+                                android:id="@+id/buttonTextD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/buttonImageD"
+                                android:layout_centerHorizontal="true"
+                                android:background="#EA9037"
+                                android:fontFamily="sans-serif-black"
+                                android:text="DRESS UP"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="16dp"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center"
+                    app:layout_rowWeight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#EA9037">
+
+                            <ImageView
+                                android:id="@+id/buttonImageT"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/portadatrivia" />
+
+                            <TextView
+                                android:id="@+id/buttonTextT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/buttonImageT"
+                                android:layout_centerHorizontal="true"
+                                android:background="#EA9037"
+                                android:fontFamily="sans-serif-black"
+                                android:text="TRIVIA"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#EA9037">
+
+                        <ImageView
+                            android:id="@+id/buttonImageCr"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/portadacw" />
+
+                        <TextView
+                            android:id="@+id/buttonTextCr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/buttonImageCr"
+                            android:layout_centerHorizontal="true"
+                            android:background="#EA9037"
+                            android:fontFamily="sans-serif-black"
+                            android:text="@string/crucigrama_button"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#EA9037"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/perfilboton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EA9037"
+                    android:clickable="true"
+                    android:src="@drawable/perfilito" />
+
+                <ImageView
+                    android:id="@+id/homeboton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EA9037"
+                    android:clickable="true"
+                    android:src="@drawable/casita" />
+
+                <ImageView
+                    android:id="@+id/ajustesboton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EA9037"
+                    android:clickable="true"
+                    android:src="@drawable/engranajito" />
+            </LinearLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
