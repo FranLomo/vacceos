@@ -28,7 +28,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
             android:backgroundTint="@color/naranja"
-            android:text="ENTENDIDO!"
+            android:text="@string/entendido"
             app:cornerRadius="30dp"
             app:strokeColor="@color/white"
             app:strokeWidth="2dp" />
