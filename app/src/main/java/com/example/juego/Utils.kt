@@ -1,6 +1,8 @@
 package com.example.juego
 
+import android.app.Activity
 import android.content.Context
+import android.content.pm.ActivityInfo
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Build
@@ -46,7 +48,7 @@ object Utils {
         return grid
     }
 
-    fun pantallaCompleta(window: Window) {
+    fun pantallaCompleta(window: Window, activity: Activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             // Para Android 11 y versiones superiores
             val windowInsetsController = window.insetsController
@@ -67,5 +69,6 @@ object Utils {
                             or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                     )
         }
+        activity.requestedOrientation =  ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
 }

@@ -21,7 +21,7 @@ class ExperienciaVacceaInicio : AppCompatActivity() {
     }
 
     private fun configurarPantalla() {
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         supportActionBar?.hide()  
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)  
     }

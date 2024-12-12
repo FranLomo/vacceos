@@ -13,7 +13,7 @@ class MenuExperiencia : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.experiencia_menu)
 
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         supportActionBar?.hide()
 

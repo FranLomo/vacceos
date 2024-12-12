@@ -16,7 +16,7 @@ class MinijuegosMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.minijuegos_menu)
 
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         supportActionBar?.hide()
 

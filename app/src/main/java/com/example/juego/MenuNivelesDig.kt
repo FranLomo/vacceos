@@ -20,7 +20,7 @@ class MenuNivelesDig  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu_niveles)
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         supportActionBar?.hide()
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 

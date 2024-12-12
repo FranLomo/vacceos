@@ -35,7 +35,7 @@ class CWActivity : AppCompatActivity() {
         setContentView(R.layout.activity_cw)
 
 
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         supportActionBar?.hide()
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 

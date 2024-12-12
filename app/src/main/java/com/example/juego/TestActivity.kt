@@ -51,7 +51,7 @@ class TestActivity : AppCompatActivity() {
     }
 
     private fun configurarPantalla() {
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         supportActionBar?.hide()
     }

@@ -13,7 +13,7 @@ class ActividadesMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actividades_menu)
 
-        pantallaCompleta(window) // Método personalizado
+        pantallaCompleta(window, this) // Método personalizado
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         supportActionBar?.hide()
 
@@ -81,7 +81,7 @@ class ActividadesMenu : AppCompatActivity() {
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         supportActionBar?.hide()
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
     }

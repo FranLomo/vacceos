@@ -20,7 +20,7 @@ class NivelesDificultad : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.niveles_dificultad)
 
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         supportActionBar?.hide()
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 

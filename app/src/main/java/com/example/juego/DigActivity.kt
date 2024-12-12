@@ -51,7 +51,7 @@ class DigActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         setContentView(R.layout.activity_dig)
 
@@ -164,7 +164,7 @@ class DigActivity : AppCompatActivity() {
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         // Ocultar la ActionBar
         supportActionBar?.hide()
         // Evitar que se apague la pantalla

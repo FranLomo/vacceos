@@ -31,7 +31,7 @@ class PerfilUsuario : AppCompatActivity() {
     }
 
     private fun configurarPantalla() {
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         supportActionBar?.hide()
     }
@@ -126,7 +126,7 @@ class PerfilUsuario : AppCompatActivity() {
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         supportActionBar?.hide()
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
     }

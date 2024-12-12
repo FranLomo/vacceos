@@ -39,7 +39,7 @@ class MazeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maze)
         gestureDetector = GestureDetector(this, SwipeGestureListener(this))
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         supportActionBar?.hide()
 
@@ -125,7 +125,7 @@ class MazeActivity : AppCompatActivity() {
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         // Ocultar la ActionBar
         supportActionBar?.hide()
         // Evitar que se apague la pantalla

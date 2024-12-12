@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        pantallaCompleta(window)
+        pantallaCompleta(window, this)
         // Ocultar la ActionBar
         supportActionBar?.hide()
         // Evitar que se apague la pantalla
